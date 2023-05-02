@@ -1,0 +1,47 @@
+input {
+    height: 100px;
+    width: 100px;
+}
+.two {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+input#btn {
+    height: 30px;
+    width: 100px;
+    background: red;
+}
+input#btn1 {
+    height: 30px;
+    width: 100px;
+    background: yellow;
+}
+input#btn2 {
+    height: 30px;
+    width: 100px;
+    background: green;
+}
+.three {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+input#asd {
+    height: 30px;
+    width: 100px;
+}
+.shapeCircle { 
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+.shapeSquare { 
+    height: 100px;
+    width: 100px;
+}
+.shapeRectangle { 
+    height: 100px;
+    width: 200px;
+    
+}

@@ -22,6 +22,11 @@ input#btn2 {
     width: 100px;
     background: green;
 }
+input#btn3 {
+    height: 30px;
+    width: 100px;
+    background: blue;
+}
 .three {
     display: flex;
     justify-content: center;
@@ -43,5 +48,9 @@ input#asd {
 .shapeRectangle { 
     height: 100px;
     width: 200px;
-    
+}
+.shapeoval { 
+    height: 100px;
+    width: 200px;
+    border-radius: 100px;    
 }

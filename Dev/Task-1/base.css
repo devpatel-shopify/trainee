@@ -22,6 +22,11 @@ input#btn2 {
     width: 100px;
     background: green;
 }
+input#btn3 {
+    height: 30px;
+    width: 100px;
+    background: blue;
+}
 .three {
     display: flex;
     justify-content: center;

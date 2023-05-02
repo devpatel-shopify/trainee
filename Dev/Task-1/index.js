@@ -3,7 +3,7 @@ const changeElement = (value) => {
   document.getElementById("asdf").style.backgroundColor = value;
   const elements = document.querySelectorAll(".asdf");
   elements.forEach((element) => {
-    element.classList.remove("shapeSquare", "shapeCircle", "shapeRectangle");
+    element.classList.remove("shapeSquare", "shapeCircle", "shapeRectangle", "shapeoval");
     element.classList.add(`shape${value}`);
   });
 };

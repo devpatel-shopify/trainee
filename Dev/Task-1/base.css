@@ -48,5 +48,9 @@ input#asd {
 .shapeRectangle { 
     height: 100px;
     width: 200px;
-    
+}
+.shapeoval { 
+    height: 100px;
+    width: 200px;
+    border-radius: 100px;    
 }

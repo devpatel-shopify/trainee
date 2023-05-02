@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 1</title>
     <link rel="stylesheet" href="base.css">
-    <script type="text/javascript" src="./index.js"></script>
-</head>
+    <script type="text/javascript" src="index.js"></script>
+</head> 
 <body>
     <div class="container">
         <center><div class="square"></div></center>
         <div class="colors">
-            <button id="red" onclick="red()">Red</button>
-            <button id="yellow" onclick="yellow()">Yellow</button>
-            <button id="green" onclick="green()">Green</button>
+            <button id="red" onclick="updateSquare('red')">Red</button>
+            <button id="yellow" onclick="updateSquare('yellow')">Yellow</button>
+            <button id="green" onclick="updateSquare('green')">Green</button>
         </div>
         <div class="shapes">
-            <button id="square" onclick="square()">Square</button>
-            <button id="circle" onclick="circle()">Circle</button>
-            <button id="rectangle" onclick="rectangle()">Rectangle</button>
+            <button id="square" onclick="updateSquare('shapeSquare')">Square</button>
+            <button id="circle" onclick="updateSquare('shapeCircle')">Circle</button>
+            <button id="rectangle" onclick="updateSquare('shapeRectangle')">Rectangle</button>
         </div>
     </div>    
     

@@ -11,7 +11,7 @@
 }
 button#red {
     background-color: red;
-    border: solid 1px black;
+    border: solid 1px black; 
 }
 button#yellow {
     background-color: yellow;

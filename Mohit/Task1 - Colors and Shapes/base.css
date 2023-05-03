@@ -9,15 +9,15 @@
     gap: 1%;
     justify-content: center;
 }
-button#red {
+button#colorRed {
     background-color: red;
     border: solid 1px black; 
 }
-button#yellow {
+button#colorYellow {
     background-color: yellow;
     border: solid 1px black;
 }
-button#green {
+button#colorGreen {
     background-color: green;
     border: solid 1px black;
 }

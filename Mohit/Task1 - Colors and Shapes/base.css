@@ -27,13 +27,13 @@ button#green {
     padding-top: 1%;
     gap: 1%;
 }
-.red{
+.colorRed{
     background-color: red;
 }
-.yellow{
+.colorYellow{
     background-color: yellow;
 }
-.green{
+.colorGreen{
     background-color: green;
 }
 .shapeSquare{

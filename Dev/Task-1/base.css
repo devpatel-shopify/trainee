@@ -1,56 +1,53 @@
-input {
-    height: 100px;
+.square {
     width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 50px auto;
+  }
+  .one {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 .two {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-input#btn {
-    height: 30px;
-    width: 100px;
-    background: red;
+button#red {
+    background-color: red;
 }
-input#btn1 {
-    height: 30px;
-    width: 100px;
-    background: yellow;
+button#yellow {
+    background-color: yellow;
 }
-input#btn2 {
-    height: 30px;
-    width: 100px;
-    background: green;
+button#green {
+    background-color: green;
 }
-input#btn3 {
-    height: 30px;
-    width: 100px;
-    background: blue;
-}
-.three {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-input#asd {
-    height: 30px;
-    width: 100px;
-}
-.shapeCircle { 
-    height: 100px;
-    width: 100px;
-    border-radius: 100px;
-}
-.shapeSquare { 
-    height: 100px;
-    width: 100px;
-}
-.shapeRectangle { 
-    height: 100px;
+  .Square {
+    border-radius: 0;
+  }
+
+  .Circle {
+    border-radius: 50%;
+  }
+
+  .Rectangle {
+    border-radius: 0;
     width: 200px;
-}
-.shapeoval { 
-    height: 100px;
-    width: 200px;
-    border-radius: 100px;    
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
+
+  .green {
+    background-color: green;
+  }
+  button.btn {
+    height: 35px;
+    width: 100px;
 }

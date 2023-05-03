@@ -1,37 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Task</title>
-    <link rel="stylesheet" href="base.css">
+<html>
+  <head>
+    <title>Update Square Example</title>
+    <link rel="stylesheet" href ="base.css">
     <script src="index.js"></script>
-</head>
+  </head>
+  <body>
+    <center><h1>Select your choice</h1></center>
+    <div class="container">
+      <center>
+        <div class="square"></div>
+      </center>
 
-<body>
-    <div class="main">
-        <div class="submain">
-            <center>
-                <h1>Select you like it</h1>
-            </center>
-            <div class="one">
-                <center><input type="" name="" class="asdf" id="asdf"></center>
-            </div>
-            <br>
-            <div class="two">
-                <input type="button" id="btn" name="red" value="Red" onclick="changeElement('red')">
-                <input type="button" id="btn1" name="yellow" value="Yellow" onclick="changeElement('yellow')">
-                <input type="button" id="btn2" name="green" value="Green" onclick="changeElement('green')">
-                <input type="button" id="btn3" name="blue" value="blue" onclick="changeElement('blue')">
-            </div>
-            <br>
-            <div class="three">
-                <input type="button" id="asd" name="Square" value="Square" onclick="changeElement('Square')">
-                <input type="button" id="asd" name="circle" value="Circle" onclick="changeElement('Circle')">
-                <input type="button" id="asd" name="rectangle" value="Rectangle" onclick="changeElement('Rectangle')">
-                <input type="button" id="asd" name="oval" value="oval" onclick="changeElement('oval')">
-            </div>
-        </div>
+      <!-- // below code is writtn on the basis of following comments
+       Square created is an "input" which shouldn't be used for shape, use DIV instead of INPUT
+      ID should be unique in whole page, So remove all Duplicated ID used in code -->
+      
+      <div class="one">
+        <button class="btn" id="red" onclick="createlement()">Red</button>
+        <button class="btn" id="yellow" onclick="createlement()">Yellow</button>
+        <button class="btn" id="green" onclick="createlement()">Green</button>
+      </div>
+      <br>
+      <div class="two">
+        <button class="btn" id="Square" onclick="createlement()">Square</button>
+        <button class="btn" id="Circle" onclick="createlement()">Circle</button>
+        <button class="btn" id="Rectangle" onclick="createlement()">Rectangle</button>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

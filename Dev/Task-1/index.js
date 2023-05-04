@@ -4,41 +4,44 @@
 // var color = YOU NEED TO GET COLOR VALUE OF SELECTED COLOR
 // var shape = YOU NEED TO GET SHAPE VALUE OF SELECTED SHAPE
 
-function createlement() {
-  var selectedElements = document.querySelectorAll(".square");
-  var shapeClasses = ["Square", "Circle", "Rectangle"];
-  var colorClasses = ["red", "yellow", "green"];
-  var clickedButton = event.target;
+(function () {
+  // 'use-strict'
+const shapeButtons = document.querySelectorAll(".two button");
+const colorButtons = document.querySelectorAll(".one button");
 
-  if (shapeClasses.includes(clickedButton.id)) {
-    selectedElements.forEach((selectedElement) => {
-      shapeClasses.forEach((shapeClass) => {
-        selectedElement.classList.toggle(shapeClass, shapeClass === clickedButton.id);
-      });
+const shapeClasses = ["Square", "Circle", "Rectangle"];
+const colorClasses = ["red", "yellow", "green"];        
+
+shapeButtons.forEach((shapeButton) => {
+  console.log(this);
+  shapeButton.addEventListener("click", createlement);
+});
+
+colorButtons.forEach((colorButton) => {
+  colorButton.addEventListener("click", createlement);
+});
+
+function createlement(event) {
+  const element = document.querySelector(".square");
+  const clickedButton = event.target;
+  if (shapeClasses.indexOf(clickedButton.id) > -1) {
+
+    shapeClasses.forEach((shapeClass) => {
+      element.classList.toggle(shapeClass, shapeClass === clickedButton.id);
     });
+
     console.log("Selected shape: " + clickedButton.innerText);
   }
 
-  if (colorClasses.includes(clickedButton.id)) {
-    selectedElements.forEach((selectedElement) => {
-      colorClasses.forEach((colorClass) => {
-        selectedElement.classList.toggle(colorClass, colorClass === clickedButton.id);
-      });
+  if (colorClasses.indexOf(clickedButton.id) > -1) {
+    colorClasses.forEach((colorClass) => {
+      element.classList.toggle(colorClass, colorClass === clickedButton.id);
     });
     console.log("Selected color: " + clickedButton.innerText);
   }
 }
+})();
 
-var shapeButtons = document.querySelectorAll(".shapes button");
-var colorButtons = document.querySelectorAll(".colors button");
-
-shapeButtons.forEach((button) => {
-  button.addEventListener("click", updateSquare);
-});
-
-colorButtons.forEach((button) => {
-  button.addEventListener("click", updateSquare);
-});
 
 
 

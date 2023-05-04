@@ -1,53 +1,60 @@
 .square {
-    width: 100px;
-    height: 100px;
-    background-color: gray;
-    margin: 50px auto;
-  }
-  .one {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  margin: 50px auto;
 }
+
+.one {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .two {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
+
 button#red {
-    background-color: red;
+  background-color: red;
 }
+
 button#yellow {
-    background-color: yellow;
+  background-color: yellow;
 }
+
 button#green {
-    background-color: green;
+  background-color: green;
 }
-  .Square {
-    border-radius: 0;
-  }
 
-  .Circle {
-    border-radius: 50%;
-  }
+.Square {
+  border-radius: 0;
+}
 
-  .Rectangle {
-    border-radius: 0;
-    width: 200px;
-  }
+.Circle {
+  border-radius: 50%;
+}
 
-  .red {
-    background-color: red;
-  }
+.Rectangle {
+  border-radius: 0;
+  width: 200px;
+}
 
-  .yellow {
-    background-color: yellow;
-  }
+.red {
+  background-color: red;
+}
 
-  .green {
-    background-color: green;
-  }
-  button.btn {
-    height: 35px;
-    width: 100px;
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+button.btn {
+  height: 35px;
+  width: 100px;
 }

@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Update Square Example</title>
-    <link rel="stylesheet" href ="base.css">
-    <script src="index.js"></script>
-  </head>
-  <body>
-    <center><h1>Select your choice</h1></center>
-    <div class="container">
-      <center>
-        <div class="square"></div>
-      </center>
 
-      <!-- // below code is writtn on the basis of following comments
+<head>
+    <title>Update Square Example</title>
+    <link rel="icon" type="image/x-icon" href="images.png">
+    <link rel="stylesheet" href="base.css">
+    <script type="text/javascript" src="index.js" defer></script>
+    
+</head>
+
+<body>
+    <center>
+        <h1>Select your choice</h1>
+    </center>
+    <div class="container">
+        <center>
+            <div class="square"></div>
+        </center>
+        <!-- // below code is writtn on the basis of following comments
        Square created is an "input" which shouldn't be used for shape, use DIV instead of INPUT
       ID should be unique in whole page, So remove all Duplicated ID used in code -->
-      
-      <div class="one">
-        <button class="btn" id="red" onclick="createlement()">Red</button>
-        <button class="btn" id="yellow" onclick="createlement()">Yellow</button>
-        <button class="btn" id="green" onclick="createlement()">Green</button>
-      </div>
-      <br>
-      <div class="two">
-        <button class="btn" id="Square" onclick="createlement()">Square</button>
-        <button class="btn" id="Circle" onclick="createlement()">Circle</button>
-        <button class="btn" id="Rectangle" onclick="createlement()">Rectangle</button>
-      </div>
+        <div class="one">
+            <button class="btn" id="red">Red</button>
+            <button class="btn" id="yellow">Yellow</button>
+            <button class="btn" id="green">Green</button>
+        </div>
+        <br>
+        <div class="two">
+            <button class="btn" id="Square">Square</button>
+            <button class="btn" id="Circle">Circle</button>
+            <button class="btn" id="Rectangle">Rectangle</button>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>

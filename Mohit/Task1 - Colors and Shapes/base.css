@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Merienda:wght@300&family=Satisfy&display=swap');
+button {
+    height: 30px;
+    width: 100px;
+    border: solid 1px black;
+    border-radius: 2px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-weight: 600;
+    color: cornflowerblue;
+    font-family: 'Merienda', cursive;
+    margin: 2% 0px;
+}
 .square {
     height: 100px;
     width: 100px;
@@ -8,18 +24,16 @@
     display: flex;
     gap: 1%;
     justify-content: center;
+    margin: 2% 0px;
 }
 button#colorRed {
     background-color: red;
-    border: solid 1px black; 
 }
 button#colorYellow {
     background-color: yellow;
-    border: solid 1px black;
 }
 button#colorGreen {
     background-color: green;
-    border: solid 1px black;
 }
 .shapes {
     display: flex;

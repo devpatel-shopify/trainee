@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  margin: 50px auto;
+}
+
+.one {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.two {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.three {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+}
+
+button.dropdown1 {
+  border: none;
+  background-color: transparent;
+  font-size: medium;
+}
+
+button#red {
+  background-color: red;
+}
+
+button#yellow {
+  background-color: yellow;
+}
+
+button#green {
+  background-color: green;
+}
+
+button#blue {
+  background-color: blue;
+}
+
+.Square {
+  border-radius: 0;
+}
+
+.Circle {
+  border-radius: 50%;
+}
+
+.Rectangle {
+  border-radius: 0;
+  width: 200px;
+}
+
+.Oval {
+  border-radius: 50px;
+  height: 100px;
+  width: 200px;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+button.btn {
+  height: 35px;
+  width: 100px;
+}

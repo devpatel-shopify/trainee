@@ -24,12 +24,6 @@
   gap: 10px;
 }
 
-.three {
-  display: flex;
-  justify-content: center;
-  gap: 1%;
-}
-
 button.dropdown1 {
   border: none;
   background-color: transparent;

@@ -1,103 +1,40 @@
-// Take Reference
 (function() {
-    const shapeButtons = document.querySelectorAll(".two button");
-    const colorButtons = document.querySelectorAll(".one button");
-    const transitionDropdown = document.getElementById("transition-dropdown");
-    const valueDropdown = document.getElementById("value-dropdown");
-    const square = document.querySelector(".square");
+  // 'use-strict'
+  const shapeButtons = document.querySelectorAll(".two button");
+  const colorButtons = document.querySelectorAll(".one button");
 
-    // Define arrays of CSS classes for shapes and colors
-    const shapeClasses = ["Square", "Circle", "Rectangle", "Oval"];
-    const colorClasses = ["red", "yellow", "green", "blue"];
+  const shapeClasses = ["Square", "Circle", "Rectangle", "Oval"];
+  const colorClasses = ["red", "yellow", "green", "blue"];
 
-    // Function to handle button clicks
-    function handleButtonClick(event) {
-        const clickedButton = event.target;
-        const isShapeButton = shapeClasses.indexOf(clickedButton.id) > -1;
-        const isColorButton = colorClasses.indexOf(clickedButton.id) > -1;
-        if (isShapeButton || isColorButton) {
-            // Determine which class array to use
-            const toggleClass = isShapeButton ? shapeClasses : colorClasses;
-            // Toggle classes on the square element
-            toggleClass.forEach((classItem) => {
-                square.classList.toggle(classItem, classItem === clickedButton.id);
-            });
-            // Log the selected shape or color
-            const selectionType = isShapeButton ? "shape" : "color";
-            console.log(`Selected ${selectionType}: ${clickedButton.innerText}`);
-        }
-    }
+  shapeButtons.forEach((shapeButton) => {
+      console.log(this);
+      shapeButton.addEventListener("click", createlement);
+  });
 
-    // Function to handle dropdown changes
-    function handleDropdownChange(event) {
-        if (event.target === transitionDropdown) {
+  colorButtons.forEach((colorButton) => {
+      colorButton.addEventListener("click", createlement);
+  });
 
-            const seconds = parseFloat(transitionDropdown.value);
-            square.style.transitionDuration = `${seconds}s`;
+  function createlement(event) {
+      const element = document.querySelector(".square");
+      const clickedButton = event.target;
+      if (shapeClasses.indexOf(clickedButton.id) > -1) {
 
-            console.log(`Selected transition: ${seconds} seconds`);
-        } else if (event.target === valueDropdown) {
+          shapeClasses.forEach((shapeClass) => {
+              element.classList.toggle(shapeClass, shapeClass === clickedButton.id);
+          });
 
-            const seconds = parseFloat(valueDropdown.value);
-            square.style.transform = `rotate(${seconds}s)`;
+          console.log("Selected shape: " + clickedButton.innerText);
+      }
 
-            console.log(`Selected value: ${seconds} seconds`);
-        }
-    }
-
-    // Add event listeners to shape and color buttons
-    shapeButtons.forEach((shapeButton) => {
-        shapeButton.addEventListener("click", handleButtonClick);
-    });
-
-    colorButtons.forEach((colorButton) => {
-        colorButton.addEventListener("click", handleButtonClick);
-    });
-
-    // Add event listeners to dropdowns
-    transitionDropdown.addEventListener("change", handleDropdownChange);
-    valueDropdown.addEventListener("change", handleDropdownChange);
+      if (colorClasses.indexOf(clickedButton.id) > -1) {
+          colorClasses.forEach((colorClass) => {
+              element.classList.toggle(colorClass, colorClass === clickedButton.id);
+          });
+          console.log("Selected color: " + clickedButton.innerText);
+      }
+  }
 })();
-  
-
-
-// (function() {
-//   // 'use-strict'
-//   const shapeButtons = document.querySelectorAll(".two button");
-//   const colorButtons = document.querySelectorAll(".one button");
-
-//   const shapeClasses = ["Square", "Circle", "Rectangle", "Oval"];
-//   const colorClasses = ["red", "yellow", "green", "blue"];
-
-//   shapeButtons.forEach((shapeButton) => {
-//       console.log(this);
-//       shapeButton.addEventListener("click", createlement);
-//   });
-
-//   colorButtons.forEach((colorButton) => {
-//       colorButton.addEventListener("click", createlement);
-//   });
-
-//   function createlement(event) {
-//       const element = document.querySelector(".square");
-//       const clickedButton = event.target;
-//       if (shapeClasses.indexOf(clickedButton.id) > -1) {
-
-//           shapeClasses.forEach((shapeClass) => {
-//               element.classList.toggle(shapeClass, shapeClass === clickedButton.id);
-//           });
-
-//           console.log("Selected shape: " + clickedButton.innerText);
-//       }
-
-//       if (colorClasses.indexOf(clickedButton.id) > -1) {
-//           colorClasses.forEach((colorClass) => {
-//               element.classList.toggle(colorClass, colorClass === clickedButton.id);
-//           });
-//           console.log("Selected color: " + clickedButton.innerText);
-//       }
-//   }
-// })();
 
 
 

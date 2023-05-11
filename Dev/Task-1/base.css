@@ -1,3 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
 .square {
   width: 100px;
   height: 100px;
@@ -17,6 +24,18 @@
   gap: 10px;
 }
 
+.three {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+}
+
+button.dropdown1 {
+  border: none;
+  background-color: transparent;
+  font-size: medium;
+}
+
 button#red {
   background-color: red;
 }
@@ -27,6 +46,10 @@ button#yellow {
 
 button#green {
   background-color: green;
+}
+
+button#blue {
+  background-color: blue;
 }
 
 .Square {
@@ -42,6 +65,12 @@ button#green {
   width: 200px;
 }
 
+.Oval {
+  border-radius: 50px;
+  height: 100px;
+  width: 200px;
+}
+
 .red {
   background-color: red;
 }
@@ -52,6 +81,10 @@ button#green {
 
 .green {
   background-color: green;
+}
+
+.blue {
+  background-color: blue;
 }
 
 button.btn {

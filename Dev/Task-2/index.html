@@ -1,62 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Update Square Example</title>
+    <title>Task 2</title>
     <link rel="icon" type="image/x-icon" href="image.jpeg">
     <link rel="stylesheet" href="base.css">
     <script type="text/javascript" src="index.js" defer></script>
 </head>
 
 <body>
-    <center>
-        <h1>Select your choice</h1>
-    </center>
     <div class="container">
+        <div class="title"> <h1>Select your choice</h1> </div>
         <center>
             <div class="square"></div>
         </center>
+        <div class="one">
+            <div class="dropdown_timeout">
+                <h3>Timeout :-</h3> 
+                <select name="timeout" id="timeout">
+                    <option value="0 sec">0 sec</option>
+                    <option value="1 sec">1 sec</option>
+                    <option value="2 sec">2 sec</option>
+                    <option value="3 sec">3 sec</option>
+                    <option value="4 sec">4 sec</option>
+                    <option value="5 sec">5 sec</option>
+                    <option value="6 sec">6 sec</option>
+                    <option value="7 sec">7 sec</option>
+                    <option value="8 sec">8 sec</option>
+                    <option value="9 sec">9 sec</option>
+                    <option value="10 sec">10 sec</option>
+                </select>
+            </div>
+            <div class="dropdown_transition">
+                <h3>Transition :- </h3>
+                <select name="transition" id="transition">
+                    <option value="0 sec">0 sec</option>
+                    <option value="1 sec">1 sec</option>
+                    <option value="2 sec">2 sec</option>
+                    <option value="3 sec">3 sec</option>
+                    <option value="4 sec">4 sec</option>
+                    <option value="5 sec">5 sec</option>
+                    <option value="6 sec">6 sec</option>
+                    <option value="7 sec">7 sec</option>
+                    <option value="8 sec">8 sec</option>
+                    <option value="9 sec">9 sec</option>
+                    <option value="10 sec">10 sec</option>
+                </select>
+            </div>
+        </div>
+        <div class="two">
+            <button id="colorRed">Red</button>
+            <button id="colorYellow">Yellow</button>
+            <button id="colorGreen">Green</button>
+            <button id="colorBlue">Blue</button>
+        </div>
         <div class="three">
-            <h3>Transition:</h3>
-            <select id="transition-dropdown" class="dropdown1">
-                <option value="1">1 sec</option>
-                <option value="2">2 sec</option>
-                <option value="3">3 sec</option>
-                <option value="4">4 sec</option>
-                <option value="5">5 sec</option>
-                <option value="6">6 sec</option>
-                <option value="7">7 sec</option>
-                <option value="8">8 sec</option>
-                <option value="9">9 sec</option>
-                <option value="10">10 sec</option>
-            </select>
-            <h3>Value</h3>
-            <select id="value-dropdown" class="dropdown1">
-                <option value="1">1 sec</option>
-                <option value="2">2 sec</option>
-                <option value="3">3 sec</option>
-                <option value="4">4 sec</option>
-                <option value="5">5 sec</option>
-                <option value="6">6 sec</option>
-                <option value="7">7 sec</option>
-                <option value="6">8 sec</option>
-                <option value="9">9 sec</option>
-                <option value="10">10 sec</option>
-            </select>
+            <button id="shapeSquare">Square</button>
+            <button id="shapeCircle">Circle</button>
+            <button id="shapeRectangle">Rectangle</button>
+            <button id="shapeOval">Oval</button>
         </div>
     </div>
-    <br>
-    <div class="one">
-        <button class="btn" id="red">Red</button>
-        <button class="btn" id="yellow">Yellow</button>
-        <button class="btn" id="green">Green</button>
-        <button class="btn" id="blue">Blue</button>
-    </div>
-    <br>
-    <div class="two">
-        <button class="btn" id="Square">Square</button>
-        <button class="btn" id="Circle">Circle</button>
-        <button class="btn" id="Rectangle">Rectangle</button>
-        <button class="btn" id="Oval">Oval</button>
-    </div>
-    </div>
+</body>
+</html>

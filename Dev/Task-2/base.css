@@ -1,27 +1,51 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
+button {
+  height: 30px;
+  width: 100px;
+  border: solid 1px black;
+  border-radius: 2px;
 }
 
-.square {
-  width: 100px;
-  height: 100px;
-  background-color: gray;
-  margin: 50px auto;
+.title {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  margin: 2% 0px;
 }
 
 .one {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 9.3%;
+  margin: 2% 0px;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: #555;
 }
 
 .two {
   display: flex;
+  gap: 1%;
   justify-content: center;
-  gap: 10px;
+  margin: 2% 0px;
+}
+
+button#colorRed {
+  background-color: red;
+}
+
+button#colorYellow {
+  background-color: yellow;
+}
+
+button#colorGreen {
+  background-color: green;
+}
+
+button#colorBlue {
+  background-color: blue;
 }
 
 .three {
@@ -30,64 +54,48 @@
   gap: 1%;
 }
 
-button.dropdown1 {
-  border: none;
-  background-color: transparent;
-  font-size: medium;
-}
-
-button#red {
+.colorRed {
   background-color: red;
 }
 
-button#yellow {
+.colorYellow {
   background-color: yellow;
 }
 
-button#green {
+.colorGreen {
   background-color: green;
 }
 
-button#blue {
+.colorBlue {
   background-color: blue;
 }
 
-.Square {
-  border-radius: 0;
+.shapeSquare {
+  height: 100px;
+  width: 100px;
 }
 
-.Circle {
+.shapeCircle {
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
 }
 
-.Rectangle {
-  border-radius: 0;
-  width: 200px;
-}
-
-.Oval {
-  border-radius: 50px;
+.shapeRectangle {
   height: 100px;
   width: 200px;
 }
 
-.red {
-  background-color: red;
+.shapeOval {
+  height: 100px;
+  width: 230px;
+  border-radius: 50%;
 }
 
-.yellow {
-  background-color: yellow;
+.dropdown_timeout {
+  display: flex;
 }
 
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-
-button.btn {
-  height: 35px;
-  width: 100px;
+.dropdown_transition {
+  display: flex;
 }

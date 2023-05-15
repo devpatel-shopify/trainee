@@ -1,64 +1,68 @@
 // Take Reference
+// As per the Comment
+// Add 2 Dropdown, With value from 1 to 10
+// Select Any Color And Shape
+// One for "TimeOut"
+// One for "Transition"
+// recangle
+// Value from first dropdown, Is for setting a delay to start transition
+// Value from Second Dropdown, Is to set animation delay
+// If Dropdown 1 : Has value 5
+// Dropdown 2 : Has value 7
+// Then your action will start after 5 second of clicking on anybutton (Color, Shape)
+// And, it will be converted to respetive color and shape in 7 seconds, With smooth transition
+
 (function() {
-    const shapeButtons = document.querySelectorAll(".two button");
-    const colorButtons = document.querySelectorAll(".one button");
-    const transitionDropdown = document.getElementById("transition-dropdown");
-    const valueDropdown = document.getElementById("value-dropdown");
-    const square = document.querySelector(".square");
+    const shapeButtons = document.querySelectorAll(".three button");
+    const colorButtons = document.querySelectorAll(".two button");
+    const squareElement = document.querySelector(".square");
 
-    // Define arrays of CSS classes for shapes and colors
-    const shapeClasses = ["Square", "Circle", "Rectangle", "Oval"];
-    const colorClasses = ["red", "yellow", "green", "blue"];
+    const shapeClasses = ["shapeSquare", "shapeCircle", "shapeRectangle", "shapeOval"];
+    const colorClasses = ["colorRed", "colorYellow", "colorGreen", "colorBlue"];
 
-    // Function to handle button clicks
-    function handleButtonClick(event) {
-        const clickedButton = event.target;
-        const isShapeButton = shapeClasses.indexOf(clickedButton.id) > -1;
-        const isColorButton = colorClasses.indexOf(clickedButton.id) > -1;
-        if (isShapeButton || isColorButton) {
-            // Determine which class array to use
-            const toggleClass = isShapeButton ? shapeClasses : colorClasses;
-            // Toggle classes on the square element
-            toggleClass.forEach((classItem) => {
-                square.classList.toggle(classItem, classItem === clickedButton.id);
-            });
-            // Log the selected shape or color
-            const selectionType = isShapeButton ? "shape" : "color";
-            console.log(`Selected ${selectionType}: ${clickedButton.innerText}`);
-        }
-    }
-
-    // Function to handle dropdown changes
-    function handleDropdownChange(event) {
-        if (event.target === transitionDropdown) {
-
-            const seconds = parseFloat(transitionDropdown.value);
-            square.style.transitionDuration = `${seconds}s`;
-
-            console.log(`Selected transition: ${seconds} seconds`);
-        } else if (event.target === valueDropdown) {
-
-            const seconds = parseFloat(valueDropdown.value);
-            square.style.transform = `rotate(${seconds}s)`;
-
-            console.log(`Selected value: ${seconds} seconds`);
-        }
-    }
-
-    // Add event listeners to shape and color buttons
     shapeButtons.forEach((shapeButton) => {
-        shapeButton.addEventListener("click", handleButtonClick);
+        shapeButton.addEventListener("click", function(event) {
+            updateSquare(event, shapeButton.id);
+        });
     });
 
     colorButtons.forEach((colorButton) => {
-        colorButton.addEventListener("click", handleButtonClick);
+        colorButton.addEventListener("click", function(event) {
+            updateSquare(event, colorButton.id);
+        });
     });
 
-    // Add event listeners to dropdowns
-    transitionDropdown.addEventListener("change", handleDropdownChange);
-    valueDropdown.addEventListener("change", handleDropdownChange);
+    function updateSquare(event, buttonId) {
+        const clickedButton = document.getElementById(buttonId);
+        let timeoutValue = parseInt(document.getElementById("timeout").value);
+        let transitionValue = parseInt(document.getElementById("transition").value);
+        let overallTransitionValue = transitionValue;
+
+        if (timeoutValue === transitionValue) {
+            overallTransitionValue += timeoutValue;
+        }
+
+        setTimeout(function() {
+            squareElement.style.transition = `background-color ${overallTransitionValue}s, border-radius ${overallTransitionValue}s, width ${overallTransitionValue}s, height ${overallTransitionValue}s`;
+
+            if (shapeClasses.indexOf(clickedButton.id) > -1) {
+                shapeClasses.forEach((shapeClass) => {
+                    squareElement.classList.toggle(shapeClass, shapeClass === clickedButton.id);
+                });
+                console.log("Selected shape: " + clickedButton.innerText);
+            }
+
+            if (colorClasses.indexOf(clickedButton.id) > -1) {
+                colorClasses.forEach((colorClass) => {
+                    squareElement.classList.toggle(colorClass, colorClass === clickedButton.id);
+                });
+                console.log("Selected color: " + clickedButton.innerText);
+            }
+        }, timeoutValue * 1000);
+    }
+
 })();
-  
+
 
 
 // (function() {

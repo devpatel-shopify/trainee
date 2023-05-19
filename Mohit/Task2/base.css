@@ -1,0 +1,70 @@
+table, th, td {
+    border: 1px solid;
+}
+table.index-output {
+    width: 100%;
+}
+.user-input.data {
+    padding: 50px 50px;
+    background-image: url(./just\ bg.jpg);
+    background-repeat: round;
+    height: 220px;
+}
+.title {
+    margin-top: -6%;
+    margin-bottom: 3%;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: ui-sans-serif;
+    font-style: unset;
+}
+label {
+    font-size: larger;
+    font-weight: 600;
+    color: black;
+}
+.input-data {
+    margin-top: 5%;
+}
+input {
+    width: 250px;
+    height: 30px;
+}
+input#date {
+    width: 253px;
+    height: 30px;
+}
+button {
+    height: 36px;
+}
+form {
+    display: flex;
+    justify-content: center;
+}
+.user-input-name {
+    display: flex;
+    gap: 6%;
+}
+.user-input-email {
+    margin-top: 3%;
+}
+input#email {
+    width: 104.5%;
+    height: 30px;
+}
+.user-input-personal {
+    display: flex;
+    gap: 6%;
+    margin-top: 3%;
+}
+.submit {
+    margin-top: 3%;
+}
+.user-input.data {
+    padding: 50px 50px;
+    background-image: url("./just\ bg.jpg");
+}
+input[type="submit"] {
+    width: 120px;
+    height: 30px;
+}
